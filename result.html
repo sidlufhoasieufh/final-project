@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="result.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+	<header class="header">
+		<div class="name">
+			<h1 style="font-family: 'Patrick Hand', cursive;">Artist</h1>
+		</div>
+		<form class="searchBar">
+			<button type="submit"><img src="img/picwish.png" id="search-img"></button>
+			<input type="text" name="" placeholder="search something" class="search">
+			<img id="bird-img" src="img/鳥2.gif">
+			<input id="file" type="file" name="">
+			<label for="file"><img id="file-img" src="img/google-plus-party-mode.png"></i></label>
+		</form>
+		
+	</header>
+	
+	<div class="resizable">
+		<iframe src="ourResult.html" class="left" id="left"></iframe>
+		<iframe src="googleResult.html"class="right" id="right"></iframe>
+	</div>
+
+	<button onclick="changeFunction()">next page</button>
+	
+</body>
+<script type="text/javascript">
+	function changeFunction(){
+		document.getElementById("left").setAttribute("src", "ourResult2.html");
+		document.getElementById("right").setAttribute("src", "googleResult2.html");
+	}
+</script>
+
+<!--<frameset rows="15%, 85%">
+	<frame class="search" src="searchBar.html" scrolling="no"></frame>
+
+	<frameset cols="50%, 50%">
+		<frame class="result" src="ourResult.html"></frame>
+		<frame class="result" src="googleResult.html"></frame>
+	</frameset>
+</frameset>-->
+</html>
